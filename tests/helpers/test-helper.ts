@@ -1,7 +1,5 @@
-import { test } from "@playwright/test";
+import { test, Page } from "@playwright/test";
 
-export function setUpUrl() {
-  test.beforeEach(async ({ page }) => {
-    await page.goto("http://www.uitestingplayground.com");
-  });
+export async function setUpUrl(page: Page) {
+  await page.goto("http://www.uitestingplayground.com");
 }

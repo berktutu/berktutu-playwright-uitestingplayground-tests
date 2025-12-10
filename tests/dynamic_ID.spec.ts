@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import { setUpUrl } from "./helpers/test-helper";
 
 test.beforeEach(async ({ page }) => {
-  setUpUrl();
+  await setUpUrl(page);
   const dynamicIdPage = page.getByRole("link", { name: "Dynamic ID" });
   await dynamicIdPage.click();
 });
