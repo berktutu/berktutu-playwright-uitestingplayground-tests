@@ -1,0 +1,22 @@
+{
+  "name": "berktutu-playwright-uitestingplayground-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berktutu/berktutu-playwright-uitestingplayground-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berktutu/berktutu-playwright-uitestingplayground-tests/issues"
+  },
+  "homepage": "https://github.com/berktutu/berktutu-playwright-uitestingplayground-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.2"
+  }
+}
