@@ -3,8 +3,8 @@ import { setUpUrl } from "./helpers/test-helper";
 
 test.beforeEach(async ({ page }) => {
   await setUpUrl(page);
-  const dynamicIdPage = page.getByRole("link", { name: "Hidden Layers" });
-  await dynamicIdPage.click();
+  const hiddenLayersPage = page.getByRole("link", { name: "Hidden Layers" });
+  await hiddenLayersPage.click();
 });
 
 test("Verify first and second click", async ({ page }) => {

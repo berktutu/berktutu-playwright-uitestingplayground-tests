@@ -3,8 +3,10 @@ import { setUpUrl } from "./helpers/test-helper";
 
 test.beforeEach(async ({ page }) => {
   await setUpUrl(page);
-  const dynamicIdPage = page.getByRole("link", { name: "Class Attribute" });
-  await dynamicIdPage.click();
+  const classAttributePage = page.getByRole("link", {
+    name: "Class Attribute",
+  });
+  await classAttributePage.click();
 });
 
 test("Identify and click the right button", async ({ page }) => {
