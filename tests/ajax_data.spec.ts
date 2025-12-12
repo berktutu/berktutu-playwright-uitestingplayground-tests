@@ -19,6 +19,7 @@ test("Trigger AJAX request", async ({ page }) => {
   // Waiting for success message because toHaveText has a default 5 seconds timeout
   await successMsg.waitFor({ state: "attached" });
   await expect(successMsg).toHaveText("Data loaded with AJAX get request.");
+  await expect(successMsg).toBeVisible();
 
   await successMsg.click();
 });
