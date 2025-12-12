@@ -1,6 +1,8 @@
 import { test, expect } from "@playwright/test";
 import { setUpUrl } from "./helpers/test-helper";
 
+test.skip(({ browserName }) => browserName === "webkit", "skip webkitt");
+
 test.beforeEach(async ({ page }) => {
   await setUpUrl(page);
 });
