@@ -21,7 +21,7 @@ test.describe("Dynamic ID", () => {
     const dynamicIdPage = page.getByRole("link", { name: "Dynamic ID" });
     await dynamicIdPage.click();
 
-    page.reload();
+    await page.reload({ waitUntil: "load" });
     const dynamicIdBtn = page.getByRole("button", {
       name: "Button with Dynamic ID",
     });
