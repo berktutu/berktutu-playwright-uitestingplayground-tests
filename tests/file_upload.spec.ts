@@ -12,9 +12,7 @@ test("Verify file upload", async ({ page }) => {
 
   const fileName = "Example_image.svg.png";
 
-  const filePath = path.resolve(
-    `C:/Users/berkt/Desktop/berktutu-playwright-uitestingplayground-tests/${fileName}`
-  );
+  const filePath = path.resolve(__dirname, "../", fileName);
 
   const frame = page.frameLocator("iframe");
 
